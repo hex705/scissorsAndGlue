@@ -191,8 +191,16 @@ class p5Glue {
     end(){
       this.glueMessage+=this.END_BYTE; 
     }
+
+    endPackage(){
+      this.glueMessage+=this.END_BYTE; 
+    }
   
     get(){
+      return this.glueMessage;
+    }
+
+    getPackage(){
       return this.glueMessage;
     }
   
